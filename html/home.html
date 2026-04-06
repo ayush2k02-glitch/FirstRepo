@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial Portal - Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo-section">
+                <span class="material-symbols-outlined logo-icon">wysiwyg</span>
+                <div class="logo-text">
+                    <h1>Editorial Portal</h1>
+                    <p>NOTICE MANAGEMENT SYSTEM</p>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="#" class="nav-item active">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    Dashboard
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined">description</span>
+                    All Notices
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined">edit_note</span>
+                    Drafts
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined">settings</span>
+                    Settings
+                </a>
+            </nav>
+            <div class="sidebar-action">
+                <button class="create-btn">Create Notice</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <div class="search-bar">
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="text" placeholder="Search notices, circulars...">
+                </div>
+                <div class="header-right">
+                    <button class="icon-btn">
+                        <span class="material-symbols-outlined">notifications</span>
+                    </button>
+                    <button class="icon-btn">
+                        <span class="material-symbols-outlined">settings</span>
+                    </button>
+                    <div class="user-profile">
+                        <div class="user-info">
+                            <p class="user-name">Ayush Chandel</p>
+                            <!-- <p class="user-role">Chief Curator</p> -->
+                        </div>
+                        <img src="/image/DSC_0029 (1).JPG.jpeg" alt="User Avatar" class="avatar">
+                    </div>
+                </div>
+            </header>
+
+            <section class="welcome-section">
+                <div class="welcome-text">
+                    <h2>Welcome back, Curator.</h2>
+                    <!-- <p>"Download attachments"</p> -->
+                </div>
+                <div class="date-badge">
+                    <span class="material-symbols-outlined">calendar_today</span>
+                    March 19, 2026
+                </div>
+            </section>
+
+            <section class="dashboard-grid">
+                <div class="stat-cards">
+                    <div class="card stat-card">
+                        <div class="stat-header">
+                            <span class="material-symbols-outlined icon-blue">description</span>
+                            <span class="trend-badge positive">+12%</span>
+                        </div>
+                        <p class="stat-label">Total Notices</p>
+                        <p class="stat-value">1,284</p>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-header">
+                            <span class="material-symbols-outlined icon-purple">folder_open</span>
+                            <span class="trend-badge steady">Steady</span>
+                        </div>
+                        <p class="stat-label">Active Circulars</p>
+                        <p class="stat-value">42</p>
+                    </div>
+                    <div class="card stat-card last-card">
+                        <div class="stat-header">
+                            <span class="material-symbols-outlined icon-orange">assignment_turned_in</span>
+                            <span class="action-badge">Action Required</span>
+                        </div>
+                        <p class="stat-label">Pending Acknowledgements</p>
+                        <p class="stat-value">156</p>
+                    </div>
+                </div>
+
+                <div class="card priority-banner">
+                    <div class="banner-content">
+                        <span class="badge circular-badge">PRIORITY CIRCULAR</span>
+                        <h3>Q4 Operational Policy Update: Digital Workspace Ethics</h3>
+                        <p>Please review the updated guidelines regarding remote access protocols and data security measures effective starting November 1st.</p>
+                        <div class="banner-footer">
+                            <button class="read-btn">Read Full Circular</button>
+                            <!-- <div class="avatar-group">
+                                <img src="https://via.placeholder.com/28" alt="Avatar" class="av-1">
+                                <img src="https://via.placeholder.com/28" alt="Avatar" class="av-2">
+                                <span class="av-count">+8</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card live-feed">
+                    <div class="feed-header">
+                        <span class="material-symbols-outlined icon-feed">history</span>
+                        <h3>Live Feed</h3>
+                    </div>
+                    <ul class="feed-list">
+                        <li>
+                            <span class="dot blue"></span>
+                            <div class="feed-item-content">
+                                <p class="feed-title">New Notice Published</p>
+                                <p class="feed-meta">Finance Department • 12m ago</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="dot green"></span>
+                            <div class="feed-item-content">
+                                <p class="feed-title">Acknowledgment Goal Met</p>
+                                <p class="feed-meta">HR Circular #402 • 1h ago</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="dot orange"></span>
+                            <div class="feed-item-content">
+                                <p class="feed-title">Urgent Draft: System Downtime</p>
+                                <p class="feed-meta">IT Support • 3h ago</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="dot gray"></span>
+                            <div class="feed-item-content">
+                                <p class="feed-title">Archive Maintenance Complete</p>
+                                <p class="feed-meta">System Admin • 5h ago</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="view-all-link">View All Activity</a>
+                </div>
+            </section>
+
+            <section class="recent-notices">
+                <div class="section-header">
+                    <h3>Recent Notices</h3>
+                    <a href="#" class="view-all-link">View All Documents</a>
+                </div>
+                <div class="card notices-card">
+                    <table class="notices-table">
+                        <thead>
+                            <tr>
+                                <th>NOTICE TITLE</th>
+                                <th>DEPARTMENT</th>
+                                <th>DATE ISSUED</th>
+                                <th>STATUS</th>
+                                <th></th> </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="title-cell">
+                                    <span class="material-symbols-outlined file-icon">description</span>
+                                    Employee Health Benefits 2026
+                                </td>
+                                <td>Human Resources</td>
+                                <td>jan 24, 2026</td>
+                                <td><span class="status-badge published">PUBLISHED</span></td>
+                                <td><span class="material-symbols-outlined more-icon">more_vert</span></td>
+                            </tr>
+                            <tr>
+                                <td class="title-cell">
+                                    <span class="material-symbols-outlined alert-icon">emergency</span>
+                                    Emergency Fire Drill Schedule
+                                </td>
+                                <td>Facilities</td>
+                                <td>Feb 02, 2026</td>
+                                <td><span class="status-badge published">PUBLISHED</span></td>
+                                <td><span class="material-symbols-outlined more-icon">more_vert</span></td>
+                            </tr>
+                            <tr>
+                                <td class="title-cell">
+                                    <span class="material-symbols-outlined draft-icon">drafts</span>
+                                    Monthly Expenditure Review
+                                </td>
+                                <td>Finance</td>
+                                <td>Feb 22, 2026</td>
+                                <td><span class="status-badge draft">DRAFT</span></td>
+                                <td><span class="material-symbols-outlined more-icon">more_vert</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <footer class="main-footer">
+                <div class="authenticated-badge">
+                    <span class="material-symbols-outlined check-icon">verified_user</span>
+                    <div>
+                        <p class="footer-label">DIGITAL NOTICE AND CIRCULAR MANAGEMENT</p>
+                        <p class="footer-title">AUTHENTICATED PORTAL</p>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2026 Digital Notice Management System</p>
+                    
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
